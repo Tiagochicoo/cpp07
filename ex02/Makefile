@@ -7,7 +7,7 @@ INC			= ./includes
 all : $(PROG)
 
 $(PROG) : $(SRCS) $(INC)
-	@$(CXX) $(CXXFLAGS) $(SRCS) -I$(INC) -o $(PROG)
+	@$(CXX) $(CXXFLAGS) $(SRCS) -I $(INC) -o $(PROG)
 	@printf "\e[38;5;46m ╔════════════════════════════════════╗\e[0m\n"
 	@printf "\e[38;5;46m█▓▒░        Compiled Iter           ░▒▓█ \e[0m\n"
 	@printf "\e[38;5;46m ╚════════════════════════════════════╝\e[0m\n"
