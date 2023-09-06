@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 13:20:18 by tpereira          #+#    #+#             */
-/*   Updated: 2023/08/14 19:42:44 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/06 21:27:04 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 int main(void)
 {
-	std::cout << "Main works! \n";
+	Array<int> test();
+	
 	return 0;
 }

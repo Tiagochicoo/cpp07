@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 13:20:22 by tpereira          #+#    #+#             */
-/*   Updated: 2023/08/14 19:47:01 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/06 21:26:35 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ template <class T>
 class Array
 {
 private:
-	T *type;
+	T	*type;
+	int	len;
 
 public:
 	Array();
