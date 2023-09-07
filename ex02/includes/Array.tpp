@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 18:57:41 by tpereira          #+#    #+#             */
-/*   Updated: 2023/09/07 08:36:34 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/07 22:15:58 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ Array<T>::Array(const Array &src)
 	*this = src;
 }
 
-
 template<class T>
 Array<T>::~Array()
 {
@@ -64,6 +63,24 @@ Array<T>& Array<T>::operator=(Array<T> const &rhs)
 	_size = rhs._size;
 
 	return (*this);
+}
+
+
+template<class T>
+T& Array<T>::operator[](size_t i)
+{
+	if (i < this->_size && i >= 0)
+		return (this->_array[i]);
+	else
+	{
+		throw std::exception();
+	}
+}
+
+template <class T>
+size_t Array<T>::getSize() const
+{
+	return (this->_size);
 }
 
 #endif
