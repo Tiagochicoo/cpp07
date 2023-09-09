@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 18:57:41 by tpereira          #+#    #+#             */
-/*   Updated: 2023/09/07 22:15:58 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/09 11:14:09 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,14 +67,12 @@ Array<T>& Array<T>::operator=(Array<T> const &rhs)
 
 
 template<class T>
-T& Array<T>::operator[](size_t i)
+T& Array<T>::operator[](int i)
 {
-	if (i < this->_size && i >= 0)
-		return (this->_array[i]);
-	else
-	{
+	if (i >= (int)this->_size || i < 0)
 		throw std::exception();
-	}
+	else
+		return (this->_array[i]);
 }
 
 template <class T>

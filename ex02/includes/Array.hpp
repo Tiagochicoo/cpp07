@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 13:20:22 by tpereira          #+#    #+#             */
-/*   Updated: 2023/09/07 22:14:42 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/09 11:13:11 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Array
 		Array(unsigned int n);
 		Array(const Array &src);
 		Array<T> &operator=(Array<T> const &rhs);
-		T& operator[](size_t i);            // subscript operator
+		T& operator[](int i);            // subscript operator
 		
 		~Array();
 

@@ -6,7 +6,7 @@
 /*   By: tpereira <tpereira@42Lisboa.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 13:20:18 by tpereira          #+#    #+#             */
-/*   Updated: 2023/09/06 21:18:27 by tpereira         ###   ########.fr       */
+/*   Updated: 2023/09/09 10:53:17 by tpereira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ int main(void) {
     double doubleArrayLen = sizeof(doubleArray) / sizeof(doubleArray[0]);
     char charArrayLen = sizeof(charArray) / sizeof(charArray[0]);
 
-    std::cout << "Printing int array: ";
+    std::cout << "int array: ";
     iter(intArray, intArrayLen, printValue<int>);
     std::cout << std::endl;
 
-    std::cout << "Printing double array: ";
+    std::cout << "double array: ";
     iter(doubleArray, doubleArrayLen, printValue<double>);
     std::cout << std::endl;
 
-    std::cout << "Printing char array: ";
+    std::cout << "char array: ";
     iter(charArray, charArrayLen, printValue<char>);
     std::cout << std::endl;
 
